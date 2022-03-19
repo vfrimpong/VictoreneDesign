@@ -1,0 +1,37 @@
+
+
+
+/* font-family: TitillumWeb-SemiBold */
+@font-face{
+    font-family: TitilliumWeb-Regular;
+    src: url('../Fonts/Titillium_Web/TitilliumWeb-Regular.ttf');
+
+}
+
+/* font-family: TitillumWeb-SemiBold */
+@font-face{
+    font-family: TitilliumWeb-Light;
+    src: url('../Fonts/Titillium_Web/TitilliumWeb-Light.ttf');
+
+}
+
+@font-face{
+    font-family: TitilliumWeb-Light-Italics;
+    src: url('../Fonts/Titillium_Web/TitilliumWeb-LightItalic.ttf');
+
+}
+
+
+/* font-family: TitillumWeb-SemiBold */
+@font-face{
+    font-family: TitilliumWeb-SemiBold;
+    src: url('../Fonts/Titillium_Web/TitilliumWeb-SemiBold.ttf');
+
+}
+
+/* font-family: TitillumWeb-SemiBold */
+@font-face{
+    font-family: Sunflower-Light;
+    src: url('../Fonts/Sunflower/Sunflower-Light.ttf');
+
+}
