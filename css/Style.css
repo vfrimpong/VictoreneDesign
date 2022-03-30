@@ -69,6 +69,13 @@ h3{
 
 }
 
+h4{
+    font-family:var(--TitilliumWeb-Light-Italics);
+    font-size: 3.5rem;
+    margin: 1px;
+    padding: 1px;
+}
+
 button.btn{
     border: none;
     border-radius: 2rem;
@@ -113,7 +120,9 @@ h4{
     transition: height 1s ease-in-out;
 }
 
-
+.nav-brand{
+    width: 12rem;   
+}
 
 
 .nav .nav-menu{
@@ -128,12 +137,13 @@ h4{
     width: 60%;
     cursor: pointer;
     display:none;
+    float: right;
 }
 
 .nav .toggle-collapse .toggle-icons{
     display: flex;
-    justify-content: flex-end;
-    padding: 1.7rem 0;
+    justify-content: right;
+    padding: 1.7rem 0;   
         
 }
 
@@ -144,15 +154,14 @@ h4{
 
 
 .collapse{
-    height: 30rem;
+    height: 25rem;
 }
 
 
 .nav .nav-items{
     list-style-type: none;
     display:flex;
-    margin:0;  
-     
+    margin:0;       
 }
 
 .nav .nav-items .nav-link{
@@ -213,25 +222,32 @@ h4{
 /* -----------Site Title-----------------*/
 
 main .site-title{
-    background: url('../Assets/Cover07-01.jpg');
-    background-size: cover;
-    height: 110vh;
+    background: url('../Assets/Cover07-02.jpg');
+    background-size: 900px 900px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height:800px;
     display: flex;
     justify-content: center;
 
 }
 
 main .site-title .site-background{
-    padding-top: 20rem;
+    padding-top: 0rem;
     text-align: center;
-    Color: var(--text-lightBeige)
+    Color: var(--text-lightBeige);
+    height: 30vh;
+    margin-top: 32vh ;
+    width: 30vh;
+    margin-left: 14vh;
 }
 
 main .site-title h1,h3{
     margin: .3rem;
-   
-
+    text-align: center;
 }
+
+
 
 main .site-title .btn{
     margin: 1.8rem;
@@ -243,8 +259,18 @@ main .site-title .btn{
 main .site-title .btn:hover{
     background: transparent;
     border: 1px solid var(--text-lightBeige);
-    color: black;
+}
 
+
+main .site-title .btn:hover a{
+    color: white;
+}
+
+main .site-content{
+    background-color: ;
+    width: 100%;
+    display: block;
+    
 }
     
 
@@ -288,6 +314,134 @@ main .blog-content span{
 
 /* -----x-----Blog Carousel-------x----------*/
 
+/* ----------explroe-grid-----------------------------*/
+
+main .explore-container{
+    margin: 30px 80px;
+    box-sizing: border-box;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat( 4, 1fr);
+    grid-template-rows: repeat(1, 355px);
+    row-gap: 40px; 
+    column-gap: 100px; 
+}
+
+
+main .explore-container .explore-grid-2{
+    grid-column: span 3;
+    grid-row: span 2;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;          
+}
+
+main .explore-container .explore-grid-1{
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+
+}
+
+
+
+main .explore-grid-1  > img {
+    width: 100%;
+    height: 70%;
+    object-fit:none;
+    align-content: flex-start;
+}
+
+
+main .grid-title{
+    display: flex;
+    text-align: center;
+    vertical-align: middle;
+    justify-content: left;
+    box-sizing: border-box;
+
+}
+
+main .grid-title h2{
+    font-size: 1.2rem;
+    margin: 1px 30px;
+    height:30px;
+    white-space: nowrap;
+
+}
+
+main .explore-grid-2 .description p{
+    font-size: .7rem;
+    margin: .5rem;
+    text-align: left;
+    width: 70%;
+}
+
+main .explore-grid-1 .description p{
+    font-size: .7rem;
+    margin: .5rem;
+    text-align: left;
+    width: 100%;
+}
+
+
+
+main .btn-grid{
+    padding: .3rem 1.2rem;
+    background: var(--rosegold);
+    margin: .1rem;
+    white-space: nowrap;
+    height: 30px;
+}
+main .btn-grid{
+    font-size: .8rem;
+}
+
+
+/* ---x-------explore grid---------------x--------------*/
+
+/* ----------portfolio grid-----------------------------*/
+
+main .porfolio-container{
+    margin: 30px 100px;
+    box-sizing: border-box;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 310px);
+    row-gap: 40px; 
+    column-gap: 40px; 
+}
+
+main .portfolio-grid-1{
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    
+    min-width: 100%;
+}
+
+main .Portolio-images > img{
+    width: 100%;
+    height: 270px;
+    object-fit:scale-down;
+    align-content: flex-start;
+}
+
+
+
+/* ---x-------portfolio---------------x--------------*/
+
+/* ----------Resume-----------------------------*/
+
+main .resume-site{
+    margin: 0 20%;
+}
+
+/* ---x-------Resume---------------x--------------*/
+
+
+
+
 /* ----------Site Contene-----------------*/
 
 main .site-content{
@@ -296,15 +450,59 @@ main .site-content{
 
 }
 
+
 /* -----x-----Site Contene-------x----------*/
+
+
+
+
+
+
+
+
 
 /* -----x------Main Content--------x---------*/
 
-/*         Viewport less than or equal to 1130px      */
+/*         Viewport less than or equal to 1500px      */
 
-@media only screen and (max-width: 1130px) {
+@media only screen and (max-width: 1500px) {
+
+    main .explore-container{
+        margin: 30px 90px;
+        grid-template-columns: repeat( 1, 1000px);
+        grid-template-rows: repeat(1, 38rem);
+        row-gap: 80px; 
+        column-gap: 40px; 
+    }
     
+    
+    main .explore-container .explore-grid-2{
+        grid-column: span 1;
+        grid-row: span 2;       
+    }
+
+    main .video-container{
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%; 
+        height: 0;
+    }
+
+    main .video-container iframe{
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%; 
+    }
+
+   main .resume-site{
+       margin: 30px;
+   }
+
+
 }
+
 
 
 /*    x     Viewport less than or equal to 1130px   x   */
@@ -312,14 +510,59 @@ main .site-content{
 /*         Viewport less than or equal to 1024px      */
 @media only screen and (max-width: 1130px){
     main .site-title{
-        background: url('../Assets/Cover07-01.jpg');
-        background-size: contain;
+        background-size: 800px 800px ;
         background-repeat: no-repeat;
         justify-content: center;
         background-position: center;
-        height: 60vh;
+        height: 700px;
         display: flex;
     }
+
+    main .site-title .site-background{
+        margin-top: 20vh;
+    }
+
+    main .explore-container{
+        margin: 30px 90px;
+        grid-template-columns: repeat( 1, 1fr);
+        grid-template-rows: repeat(1, 38rem);
+        row-gap: 80px; 
+        column-gap: 40px; 
+    }
+    
+    
+    main .explore-container .explore-grid-2{
+        grid-column: span 1;
+        grid-row: span 2;       
+    }
+
+
+   
+    main .video-container{
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%; 
+        height: 0;
+    }
+
+    main .video-container iframe{
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%; 
+    }
+
+
+    main .porfolio-container{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);; 
+    }
+    
+    
+    
+
+    
 }
 
 /*      x   Viewport less than or equal to 1024px   x   */
@@ -327,23 +570,79 @@ main .site-content{
 
 /*         Viewport less than or equal to 750px      */
 
-@media only screen and (max-width: 750px){
+@media only screen and (max-width: 751px){
+    .nav .nav-brand{
+        padding-right: 100%;
+    }
+
     .nav .nav-menu, .nav .nav-items{
         flex-direction: column;
-    } 
+        align-items:center;
+        
+        } 
     
     .nav .toggle-collapse{
         display: initial;
+        
     }
 
+    nav .toggle-collapse{
+        width: 10% !important;    
+    }
+    
+   
+
     main .site-title{
-        background: url('../Assets/Cover05-01.jpg');
-        background-size: contain;
+        background-size: 550px 550px;
         background-repeat: no-repeat;
         justify-content: center;
         background-position: center;
+        height: 500px;
         
     }
+    
+    main .site-title .site-background{
+        margin-top: 15vh;
+        margin-left: 10vh;
+    }
+
+    
+
+    main .explore-container{
+        margin: 30px 20px;
+        grid-template-columns: repeat( 1, 1fr);
+        grid-template-rows: repeat(1, 25rem);
+        row-gap: 40px; 
+        column-gap: 40px; 
+    }
+
+    main .explore-container .explore-grid-2{
+        grid-column: span 1;
+        grid-row: span 1;         
+    }
+
+    main .explore-grid-2 .description p{
+        font-size: .5rem;
+        margin: .5rem;
+        text-align: left;
+        width: 95%;
+    }
+
+    main .explore-grid-1 .description p{
+        font-size: .5rem;
+        margin: .5rem;
+        text-align: left;
+        width: 95%;
+    }
+
+    main .porfolio-container{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    
+    
+
+
 }
 
 /*      x   Viewport less than or equal to 750px    x  */
@@ -352,13 +651,58 @@ main .site-content{
 
 /*         Viewport less than or equal to 520px      */
 @media only screen and (max-width:520px) {
+    main .site-title{
+        background-size: contain;
+        height: 500px;
+    }
+    main .site-title .site-background{
+        margin-top: 15vh;
+        white-space: nowrap;
+    }
+    
+
     main .blog{
         height: 125vh;
     }
-}
 
-nav .toggle-collapse{
-    width: 80% !important;
-}
 
+    nav .toggle-collapse{
+        width: 10% !important;    
+    }
+
+    main .explore-container{
+        margin: 30px 20px;
+        grid-template-columns: repeat( 1, 1fr);
+        grid-template-rows: repeat(1, 25rem);
+        row-gap: 40px; 
+        column-gap: 40px; 
+    }
+
+    main .explore-container .explore-grid-2{
+        grid-column: span 1;
+        grid-row: span 1;         
+    }
+
+    main .description p{
+        font-size: .4rem;
+        margin: .2rem;
+        text-align: left;
+        width: 99%;
+        
+    }
+
+
+
+    main .porfolio-container{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+
+
+    main .porfolio-container{
+        margin: 30px 40px;
+    }
+
+}
 /*    x     Viewport less than or equal to 520px  x    */

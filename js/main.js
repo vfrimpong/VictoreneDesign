@@ -34,9 +34,15 @@ $(document).ready(function(){
     //owl-carousel for blog
     $('.owl-carousel').owlCarousel({
         loop: true,
-        dots: false,
-        nav: true,
-        responsive: responsive
+        dots: true,
+        nav: false,
+        responsive:{
+            0:{
+                items: 1
+            }
+
+        }
+            
 
     });
 
